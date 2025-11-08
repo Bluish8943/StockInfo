@@ -15,11 +15,7 @@ function StockBar({sym,stocks,setStocks}) {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const baseURL = process.env.NODE_ENV === 'production'
-        ? 'https://backendstockinfo.onrender.com' 
-        : 'http://localhost:5000';    
-
+      try {    
         const resHis = await fetch(`https://backendstockinfo.onrender.com/api/fetchStock?symbol=${sym}`);
         const jsonHis = await resHis.json();
         setData(jsonHis);
@@ -164,7 +160,7 @@ function StockBar({sym,stocks,setStocks}) {
         <div>
           Open: ${firstDataPoint}
           <br />
-          Previous Close: {prevClose}
+          Previous Close: ${prevClose}
         </div>
         <div style={{marginLeft: "20px"}}>
           Low: ${minLow}
