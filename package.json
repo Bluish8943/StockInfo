@@ -3,7 +3,10 @@
     "tailwindcss": "^4.1.17"
   },
   "scripts": {
-  "build": "react-scripts build",
-  "start": "react-scripts start"
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }
