@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+  "build": "react-scripts build",
+  "start": "react-scripts start"
   }
 }
